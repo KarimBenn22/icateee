@@ -9,7 +9,7 @@ export default function HeaderSection() {
           <span>December 15-18, 2025</span>
           <span className="mx-2">•</span>
           <MapPin className="h-4 w-4" />
-          <span>Algeria, M'sila</span>
+          <span>Algeria, M&apos;sila</span>
         </div>
 
         <h1 className="text-3xl md:text-5xl font-extrabold text-center leading-tight tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary/70">
