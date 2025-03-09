@@ -1,9 +1,9 @@
-import Link from "next/link"
+import Link from "next/link";
+import Footer from "../components/footer/Footer";
 // Todo: REFACTOR THIS LATER
 export default function Playground() {
   return (
-    
-    <main className="flex w-screen h-screen">
+    <main className="flex flex-col w-screen h-screen">
       <nav className="w-full bg-primary h-40 font-semibold text-medium tracking-wider">
         <div className="w-full h-25"></div>
         <ul className="flex gap-4 w-full justify-center">
@@ -45,6 +45,8 @@ export default function Playground() {
           </li>
         </ul>
       </nav>
+      <div className="h-96"></div>
+      <Footer />
     </main>
-  )
+  );
 }
