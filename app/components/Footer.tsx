@@ -20,21 +20,19 @@ export default function Footer() {
         </div>
         <div className="space-y-4">
           <h3 className="text-xl font-bold">Quick Links</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-3">
             {navLinks.map((link) => (
-              <li key={link.id}>
-                <Link
-                  href={link.path}
-                  className="text-foreground inline-block py-1 hover:underline"
-                >
+              <li key={link.id} className="relative group">
+                <Link href={link.path} className="relative inline-block">
                   {link.name}
+                  <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-foreground transition-all duration-300 group-hover:w-full"></span>
                 </Link>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className="border-t border-foreground mt-12 p-8 text-center text-foreground w-full mx-auto">
+      <div className="border-t border-foreground mt-12 p-8 text-center text-foreground w-full">
         <p className="text-center">
           © {new Date().getFullYear()} Conference 2025. All rights reserved.
         </p>
