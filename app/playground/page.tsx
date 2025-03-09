@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Footer from "@/app/components/Footer";
 import Nav from "@/app/components/Nav";
 export default function Playground() {
