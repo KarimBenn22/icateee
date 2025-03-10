@@ -1,0 +1,26 @@
+{
+    "researchers": [
+      { "name": "ABDELKRIM Rebiai", "university": "University of El-Oued", "country": "Algeria", "code": "DZ" },
+      { "name": "ABDOU Abdelhak", "university": "University of M'sila", "country": "Algeria", "code": "DZ" },
+      { "name": "ABED Ahcene", "university": "University of Blida", "country": "Algeria", "code": "DZ" },
+      { "name": "AHRICHE Aimad", "university": "University of Boumerdès", "country": "Algeria", "code": "DZ" },
+      { "name": "ALAHMAR Ayman", "university": "University of Lakehead", "country": "Canada", "code": "CA" },
+      { "name": "AMROUCHE Aissa", "university": "CRSTDLA", "country": "Algeria", "code": "DZ" },
+      { "name": "ANGELOPOULOU Anastassia", "university": "University of Westminster", "country": "UK", "code": "GB" },
+      { "name": "ASBAI Nassim", "university": "University of BBA", "country": "Algeria", "code": "DZ" },
+      { "name": "ATI Anea", "university": "Università di Parma", "country": "Italy", "code": "IT" },
+      { "name": "BADIE Farshad", "university": "University of Aalborg", "country": "Denmark", "code": "DK" },
+      { "name": "BAHIDDINE Miloud", "university": "University of M'sila", "country": "Algeria", "code": "DZ" },
+      { "name": "BAKHTI Haddi", "university": "University of M'sila", "country": "Algeria", "code": "DZ" },
+      { "name": "BELHAOUARI Samir Brahim", "university": "Hamad Bin Khalifa University", "country": "Qatar", "code": "QA" },
+      { "name": "BENLAMRI Rachid", "university": "University of Doha for Science and Technology", "country": "Qatar", "code": "QA" },
+      { "name": "BOUBCHIR Larbi", "university": "University of Paris 8", "country": "France", "code": "FR" },
+      { "name": "BOUHLEL Mohamed Salim", "university": "University of Sfax", "country": "Tunisia", "code": "TN" },
+      { "name": "BREMOND Francois", "university": "INRIA-Sophia Antipolis", "country": "France", "code": "FR" },
+      { "name": "BUEMI Maria Elena", "university": "Universidad de Buenos Aires", "country": "Argentina", "code": "AR" },
+      { "name": "CHAHIR Youcef", "university": "Université Caen Normandie", "country": "France", "code": "FR" },
+      { "name": "CHAIB Noureddine", "university": "University of Laghouat", "country": "Algeria", "code": "DZ" },
+      { "name": "CHAKROUN Salim", "university": "University of M'sila", "country": "Algeria", "code": "DZ" }
+    ]
+  }
+  
