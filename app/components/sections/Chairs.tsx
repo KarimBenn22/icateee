@@ -3,17 +3,6 @@
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import chairs from "./chairs.json"
-interface CommitteeMember {
-  role: string
-  name: string
-  title?: string
-  affiliation: string
-}
-
-interface CommitteeSection {
-  title: string
-  members: CommitteeMember[]
-}
 
 export default function CommitteeOrganization() {
   const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({
