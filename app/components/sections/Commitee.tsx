@@ -53,7 +53,7 @@ export default function CommitteeSection() {
                           fallback={<span className="text-gray-400">N/A</span>}
                           title={researcher.country} // Native HTML tooltip for accessibility
                         />
-                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-primary text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
+                        <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-3 py-1 bg-primary text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap" aria-hidden>
                           {researcher.country}
                         </div>
                       </div>
