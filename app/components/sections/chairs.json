@@ -1,0 +1,123 @@
+{
+  "committeeSections": [
+    {
+      "title": "Honorary Chair",
+      "members": [
+        {
+          "role": "Honorary Chair",
+          "name": "Amar BOUDELLA",
+          "title": "Pr.",
+          "affiliation": "Rector of M'sila University, Algeria"
+        }
+      ]
+    },
+    {
+      "title": "Co-Honorary Chair",
+      "members": [
+        {
+          "role": "Co-Honorary Chair",
+          "name": "Abdelkader DJERAD",
+          "title": "Dr.",
+          "affiliation": "Dean of Faculty of Technology University of M'sila, Algeria"
+        }
+      ]
+    },
+    {
+      "title": "General Chair",
+      "members": [
+        {
+          "role": "General Chair",
+          "name": "Ismail GHADBANE",
+          "title": "Pr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "General Chair",
+          "name": "Bilal ATTALLAH",
+          "title": "Pr.",
+          "affiliation": "University of M'sila, Algeria"
+        }
+      ]
+    },
+    {
+      "title": "Organizing Committee Chair",
+      "members": [
+        {
+          "role": "Organizing Committee Chair",
+          "name": "Abdelmalek ZORIG",
+          "title": "Dr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "Organizing Committee Chair",
+          "name": "Youcef BRIK",
+          "title": "Dr.",
+          "affiliation": "University of M'sila, Algeria"
+        }
+      ]
+    },
+    {
+      "title": "Scientific Committee Chair",
+      "members": [
+        {
+          "role": "Scientific Committee Chair",
+          "name": "Abderrahmane BOUGEURRA",
+          "title": "Pr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "Scientific Committee Chair",
+          "name": "Mohamed LADJAL",
+          "title": "Pr.",
+          "affiliation": "University of M'sila, Algeria"
+        }
+      ]
+    },
+    {
+      "title": "Finance Chairs",
+      "members": [
+        {
+          "role": "Finance Chair",
+          "name": "Fateh KRIM",
+          "title": "Pr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "Finance Chair",
+          "name": "Mouloud CHALLAL",
+          "title": "Pr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "Finance Chair",
+          "name": "Said DRID",
+          "title": "Pr.",
+          "affiliation": "University of M'sila, Algeria"
+        }
+      ]
+    },
+    {
+      "title": "Publication Chairs",
+      "members": [
+        {
+          "role": "Publication Chair",
+          "name": "Abderrahim ZEMMIT",
+          "title": "Dr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "Publication Chair",
+          "name": "Fares MEZRAG",
+          "title": "Dr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "Publication Chair",
+          "name": "Assam BOUDIA",
+          "title": "Dr.",
+          "affiliation": "University of M'sila, Algeria"
+        }
+      ]
+    }
+  ]
+}
