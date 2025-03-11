@@ -13,7 +13,8 @@
     "next": "15.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-world-flags": "^1.6.0"
+    "react-world-flags": "^1.6.0",
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -29,7 +30,6 @@
   },
   "optionalDependencies": {
     "@tailwindcss/oxide-linux-x64-gnu": "^4.0.1",
-    "lightningcss-linux-x64-gnu": "^1.29.1",
-    "sharp": "^0.33.5"
+    "lightningcss-linux-x64-gnu": "^1.29.1"
   }
 }
