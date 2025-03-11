@@ -151,8 +151,6 @@ export default function ConferenceHeader() {
               Advanced Technologies & Applications
             </h3>
             <div className="space-y-2">
-              {" "}
-              className="text-black"
               <div className="flex items-start">
                 <span className="mr-2 text-primary">•</span>
                 <p className="text-black">Electromagnetics & CND</p>
