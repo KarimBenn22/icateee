@@ -1,0 +1,51 @@
+/* Container for the carousel */
+.slider {
+  width: 100vw;
+  height: 300px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Individual slides */
+.slider > img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: fill;
+  /* Each slide follows the same animation pattern */
+  animation: slide 10s infinite ease-in-out;
+  /* Stagger the animations based on slide index */
+  animation-delay: calc(var(--index) * 5s);
+}
+
+/* Animation keyframes for the sliding effect */
+@keyframes slide {
+  /* Start off-screen to the right */
+  0% {
+    left: 100%;
+  }
+
+  /* Move into view */
+  10% {
+    left: 0%;
+  }
+
+  /* Stay in view */
+  10%,
+  50% {
+    left: 0%;
+  }
+
+  /* Move out of view to the left */
+  60% {
+    left: -100%;
+  }
+
+  /* Stay off-screen until cycle repeats */
+  60%,
+  100% {
+    left: -100%;
+  }
+}
+
