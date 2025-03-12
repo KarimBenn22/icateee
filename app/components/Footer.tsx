@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+// 
 export default function Footer() {
   const navLinks = [
     { id: 1, name: "Home", path: "#" },
