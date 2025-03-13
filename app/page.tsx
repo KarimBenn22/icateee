@@ -7,7 +7,6 @@ export default function Home() {
       <main className="flex flex-col items-center">
         <Nav />
         <div className="max-w-[1200px]">
-          <HeaderSection></HeaderSection>
         </div>
         <Footer />
       </main>

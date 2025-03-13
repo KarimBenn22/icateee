@@ -1,7 +1,7 @@
 /* Container for the carousel */
 .slider {
-  width: 100vw;
-  height: 300px;
+  width: 100%;
+  height: 500px;
   background: #000;
   position: relative;
   overflow: hidden;
@@ -17,6 +17,18 @@
   animation: slide 10s infinite ease-in-out;
   /* Stagger the animations based on slide index */
   animation-delay: calc(var(--index) * 5s);
+}
+
+.tinter {
+  background-color: #030a38;
+  opacity: 85%;
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%,-50%);
 }
 
 /* Animation keyframes for the sliding effect */
