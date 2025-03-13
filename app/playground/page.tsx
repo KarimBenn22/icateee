@@ -8,10 +8,8 @@ export default function Playground() {
   return (
     <main className="flex flex-col items-center">
       <Nav />
-      <div className="max-w-[1200px]">
+      <div className="">
         <HeaderSection></HeaderSection>
-        <Chairs></Chairs>
-        <Commitee></Commitee>
       </div>
       <Footer />
     </main>

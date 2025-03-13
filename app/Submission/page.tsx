@@ -103,6 +103,7 @@ export default function IcateeePage() {
                     Latex Bibliography Files
                   </a>
                 </div>
+
               </div>
             </div>
           </div>
@@ -111,5 +112,3 @@ export default function IcateeePage() {
     </>
   )
 }
-
-  
