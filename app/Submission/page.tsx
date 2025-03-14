@@ -45,7 +45,7 @@ export default function IcateeePage() {
                   <span className="text-gray-700">URL:</span>
                   <a
                     href="https://cmt3.research.microsoft.com/ICATEEE2025/Submission/Index"
-                    className="text-primary hover:underline"
+                    className="text-primary hover:underline break-all"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
