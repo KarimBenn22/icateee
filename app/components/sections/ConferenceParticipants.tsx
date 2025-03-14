@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import data from "./orginizers.json";
 
-export default function OriginizingCommitee() {
+export default function ConferenceParticipants() {
   const names = data.names;
   const [sortedNames, setSortedNames] = useState<string[]>([]);
 

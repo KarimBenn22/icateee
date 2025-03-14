@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="flex items-center justify-center relative">
         <ul className="flex gap-4 ml-15">
           <li className="p-2 relative group">
-            <Link href={"/"} className="relative inline-block">
+            <Link href={"/playground"} className="relative inline-block">
               HOME
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>

@@ -10,6 +10,7 @@ export default function IcateeePage() {
         <div className="container mx-auto px-4 py-12 max-w-4xl pt-32 md:pt-40">
           <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
             ICATEEE 2025
+            <div className="w-24 h-1 mx-auto mt-4 rounded-full bg-primary"></div>
           </h1>
 
           <div className="bg-primary/5 rounded-lg shadow-md border border-primary/10 overflow-hidden mb-8">

@@ -40,6 +40,7 @@ export default function ImportantDatesSection() {
         <div className="mx-auto max-w-3xl text-center mb-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">
             Important Dates
+            <div className="w-24 h-1 mx-auto mt-4 rounded-full bg-primary"></div>
           </h2>
           <p className="mt-2 text-muted-foreground text-bl text-black">
             Please note these key deadlines for your submissions

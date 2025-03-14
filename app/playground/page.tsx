@@ -3,7 +3,7 @@ import Nav from "@/app/components/Nav";
 import HeaderSection from "@/app/components/sections/Header";
 import RegistrationSection from "../components/sections/Registration";
 import ImportantDatesSection from "../components/sections/ImportantDates";
-import OriginizingCommitee from "../components/sections/OrginizingCommittee";
+import ConferenceParticipants from "../components/sections/ConferenceParticipants";
 import Topics from "../components/sections/topics";
 
 export default function Playground() {
@@ -15,7 +15,6 @@ export default function Playground() {
         <Topics />
         <ImportantDatesSection />
         <RegistrationSection />
-        <OriginizingCommitee />
       </div>
       <Footer />
     </main>
