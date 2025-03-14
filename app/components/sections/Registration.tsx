@@ -96,8 +96,8 @@ export default function RegistrationSection() {
               key={index}
               className="bg-foreground rounded-lg shadow-md border border-primary/20 overflow-hidden"
             >
-              <div className="bg-primary/10 px-4 py-3 bg-gradient-to-t from-primary/40 via-primary/10 to-primary/20">
-                <h3 className="font-medium text-primary">{fee.category}</h3>
+              <div className="bg-primary px-4 py-3 ">
+                <h3 className="font-medium text-foreground">{fee.category}</h3>
               </div>
               <div className="p-4 space-y-3">
                 <div className="flex justify-between py-2 border-b border-gray-100">
