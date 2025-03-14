@@ -263,24 +263,36 @@ export default function ConferenceHeader() {
           </div>
 
           <div className="flex flex-col md:flex-row justify-center gap-4 mb-10">
-            <div className="flex items-center justify-center bg-secondary/70 text-primary gap-2 p-4 shadow-sm rounded-full">
-              <Calendar className="h-5 w-5 text-primary" />
-              <span className="font-medium text-primary">
-                15-16 December 2025
-              </span>
+            <div className="relative group flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
+              <div className="h-[120px] w-10 bg-gradient-to-r from-white/10 via-white/50 to-white/10 absolute blur-sm -rotate-45 -left-16 group-hover:left-[150%] duration-500 delay-200" />
+
+              <div className="text-left px-2">
+                <div className="text-sm md:text-base">
+                  {" "}
+                  <Calendar className="h-5 w-5 inline mr-2" />
+                  15-16 December 2025
+                </div>
+              </div>
             </div>
-            <div className="flex items-center justify-center bg-secondary/70 text-primary gap-2 p-4 shadow-sm rounded-full">
-              <MapPin className="h-5 w-5" />
-              <span
-                className="font-medium"
-                style={{ color: "var(--primary-500)" }}
-              >
-                M&apos;sila, ALGERIA
-              </span>
+            <div className="relative group flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
+              <div className="h-[120px] w-10 bg-gradient-to-r from-white/10 via-white/50 to-white/10 absolute blur-sm -rotate-45 -left-16 group-hover:left-[150%] duration-500 delay-200" />
+              <div className="text-left px-2">
+                <div className="text-sm md:text-base">
+                  <MapPin className="h-5 w-5 inline mr-2" /> M&apos;sila,
+                  ALGERIA
+                </div>
+              </div>
             </div>
-            <div className="flex items-center justify-center bg-secondary/70 text-primary gap-2 p-4 shadow-sm rounded-full">
-              <Users className="h-5 w-5" />
-              <span className="font-medium">IEEE Algeria Section</span>
+            <div className="relative group flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
+              <div className="h-[120px] w-10 bg-gradient-to-r from-white/10 via-white/50 to-white/10 absolute blur-sm -rotate-45 -left-16 group-hover:left-[150%] duration-500 delay-200" />
+
+              <div className="text-left px-2">
+                <div className="text-sm md:text-base">
+                  {" "}
+                  <Users className="h-5 w-5 inline mr-2" />
+                  IEEE Algeria Section
+                </div>
+              </div>
             </div>
           </div>
         </div>
