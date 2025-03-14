@@ -1,3 +1,4 @@
+import { CalendarIcon } from "lucide-react";
 interface DateItem {
   event: string;
   date: string;
@@ -34,42 +35,46 @@ export default function ImportantDatesSection() {
   ];
 
   return (
-    <section className="w-full">
-      <div className="">
-        <div className="mx-auto max-w-3xl text-center mb-8">
+    <section className="w-full py-12 md:py-16 lg:py-20">
+      <div className="container px-4 md:px-6">
+        <div className="mx-auto max-w-3xl text-center mb-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">
             Important Dates
           </h2>
-          <p className="mt-2 text-gray-800">
+          <p className="mt-2 text-muted-foreground text-bl text-black">
             Please note these key deadlines for your submissions
           </p>
         </div>
 
-        <div className="mx-auto max-w-[1200px]">
-          <div className="">
+        <div className="mx-auto max-w-5xl">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {dates.map((item, index) => (
               <div
                 key={index}
-                className=""
+                className="group relative flex flex-col overflow-hidden rounded-lg border border-primary/20 bg-gradient-to-t from-primary/40 via-primary/10 to-primary/20 shadow-sm transition-all hover:shadow-md"
               >
-                <div className="ml-8 flex flex-col">
-                  <div>
-                    <div className="flex space-x-4 items-center justify-center bg-white border-l-4 border-l-[#1a4480] border-t border-r border-b border-[#dfe1e2] shadow-sm px-5">
-                      <span className="font-medium text-[#71767a] mt-1">
-                        {item.month}
-                      </span>
-                      <span className="text-4xl font-bold text-[#1a4480]">
-                        {item.day}
-                      </span>
-                      <span className="text-[#71767a] mt-1">2025</span>
-                    </div>
+                <div className="flex items-center justify-center bg-primary/10 p-4 text-center">
+                  <div className="flex flex-col items-center">
+                    <span className="text-sm font-medium text-primary/70">
+                      {item.month}
+                    </span>
+                    <span className="text-4xl font-bold text-primary">
+                      {item.day}
+                    </span>
+                    <span className="text-sm text-primary/70">2025</span>
                   </div>
-                  <div className="bg-white p-6 border-l-4 border-l-[#1a4480] border-t border-r border-b border-[#dfe1e2] shadow-sm h-full">
-                    <h3 className="text-xl font-semibold text-[#112244] mb-2">
-                      {item.event}
-                    </h3>
-                    <p className="text-[#3d4551]">{item.date}</p>
-                    <div className="mt-4 h-0.5 w-16 bg-[#1a4480]"></div>
+                </div>
+
+                <div className="flex flex-1 flex-col p-6 bg-foreground">
+                  <div className="mb-2 flex items-center">
+                    <CalendarIcon className="mr-2 h-4 w-4 text-primary" />
+                    <span className="text-sm text-gray-600">{item.date}</span>
+                  </div>
+                  <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                    {item.event}
+                  </h3>
+                  <div className="mt-auto">
+                    <div className="h-0.5 w-16 bg-primary transition-all group-hover:w-20"></div>
                   </div>
                 </div>
               </div>
