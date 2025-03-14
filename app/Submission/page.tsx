@@ -1,11 +1,8 @@
 import { Download } from "lucide-react";
-import Navbar from "../components/Nav";
-import Footer from "../components/Footer";
 
 export default function IcateeePage() {
   return (
     <>
-      <Navbar />
       <main className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-12 max-w-4xl pt-32 md:pt-40">
           <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center text-primary">
@@ -133,7 +130,6 @@ export default function IcateeePage() {
           </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
