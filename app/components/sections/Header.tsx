@@ -5,8 +5,34 @@ import {
   BookOpen,
   Globe,
   Lightbulb,
+  Cpu,
 } from "lucide-react";
+import Image from "next/image";
+import UnivImage from "@/public/univ-msila.jpg";
 import styles from "./carousel.module.css";
+
+/**
+ *
+ * Header Banner Logo
+ * Will probably be replaced by an svg later
+ *
+ */
+
+function HeaderBannerLogo() {
+  return (
+    <div className="flex justify-center mb-4">
+      <div
+        className="inline-flex items-center justify-center p-3 rounded-full shadow-lg"
+        style={{
+          backgroundColor: "var(--primary-500)",
+          color: "var(--foreground)",
+        }}
+      >
+        <Cpu className="h-8 w-8" />
+      </div>
+    </div>
+  );
+}
 
 /**
  *
@@ -17,23 +43,25 @@ import styles from "./carousel.module.css";
 
 function HeaderBanner() {
   return (
-    <div className="text-white">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 tracking-tight">
-        The 2<sup>nd</sup> International Conference of
-      </h1>
-      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
-        Advanced Technology in Electronic and
-        <br />
-        Electrical Engineering (ICATEEE2025)
-      </h1>
-      <div className="flex items-center justify-center space-x-2 md:text-xl font-semibold">
-        <Calendar className="h-5 w-5" />
-        <p>15th to 16th December 2025</p>
-        <span className="mx-2">•</span>
-        <MapPin className="h-5 w-5" />
-        <p>M&apos;sila, ALGERIA</p>
+    <>
+      <div className="mb-8 text-white">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 tracking-tight">
+          The 2<sup>nd</sup> International Conference of
+        </h1>
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight">
+          Advanced Technology in Electronic and
+          <br />
+          Electrical Engineering (ICATEEE2025)
+        </h1>
+        <div className="flex items-center justify-center space-x-2 md:text-xl font-semibold">
+          <Calendar className="h-5 w-5" />
+          <p>15th to 16th December 2025</p>
+          <span className="mx-2">•</span>
+          <MapPin className="h-5 w-5" />
+          <p>M&apos;sila, ALGERIA</p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
@@ -95,8 +123,8 @@ export default function ConferenceHeader() {
     <div className="relative overflow-hidden w-full">
       <div className="relative mx-auto text-center flex items-center justify-center flex-col">
         <CarouselPlayground />
-        <div className="p-6 mb-8 text-center w-full bg-secondary">
-          <p className="text-sm md:text-base mx-auto max-w-4xl text-black">
+        <div className="p-6 mb-8 bg-secondary">
+          <p className="text-sm md:text-base text-black">
             Hosted by the Faculty of Technology-M&apos;sila University, the IEEE
             Algeria Section, the{" "}
             <span className="font-medium text-primary">
@@ -133,9 +161,9 @@ export default function ConferenceHeader() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-10">
-            <div className="shadow-sm bg-foreground">
-              <div className="bg-primary p-4 flex items-center justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-10 w-[75%] mx-auto">
+            <div className="shadow-sm bg-foreground rounded-lg">
+              <div className="bg-primary p-4 flex items-center justify-center rounded-t-lg">
                 <h3 className="font-semibold flex items-center">
                   <Globe className="h-5 w-5 mr-2" />
                   Signal Processing & Communications
@@ -194,8 +222,8 @@ export default function ConferenceHeader() {
                 </div>
               </div>
             </div>
-            <div className="bg-foreground shadow-sm">
-              <div className="bg-primary p-4 flex items-center justify-center">
+            <div className="bg-foreground shadow-sm rounded-lg">
+              <div className="bg-primary p-4 flex items-center justify-center rounded-t-lg">
                 <h3 className="font-semibold flex items-center">
                   <Lightbulb className="h-5 w-5 mr-2" />
                   Advanced Technologies & Applications
