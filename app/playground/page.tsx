@@ -18,7 +18,6 @@ export default function Playground() {
         <ImportantDatesSection />
         <RegistrationSection />
         <SponsorsSection />
-        <SpeakersSection></SpeakersSection>
       </div>
       <Footer />
     </main>
