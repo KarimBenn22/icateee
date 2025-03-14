@@ -25,7 +25,7 @@ export default function ConferenceParticipants() {
   });
 
   return (
-    <div className="w-full mx-auto my-8 px-[62px]">
+    <div className=" w-full max-w-[1200px] mx-auto px-4 py-8 sm:py-12">
       <div className="bg-primary text-white p-6 rounded-t-lg">
         <h2 className="text-2xl font-bold text-center mb-2">
           Conference Organizing Committee
