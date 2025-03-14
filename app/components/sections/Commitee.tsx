@@ -16,8 +16,8 @@ export default function CommitteeSection() {
 
   return (
     <section className="w-full py-12 text-black">
-      <div className="container px-4 md:px-6 mx-auto">
-        <h2 className="text-3xl font-bold text-center text-[#003366] mb-8">Committee Members</h2>
+      <div className="container mx-auto max-w-[1200px] px-4">
+        <h2 className="text-4xl font-bold text-center text-primary mb-8">Committee Members</h2>
 
         <div className="mb-6 relative">
           <div className="relative">
