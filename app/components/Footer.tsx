@@ -1,18 +1,18 @@
 import Link from "next/link";
-// 
+//
 export default function Footer() {
   const navLinks = [
-    { id: 1, name: "Home", path: "#" },
-    { id: 2, name: "COMMITEES", path: "#" },
-    { id: 3, name: "SUBMISSION", path: "#" },
-    { id: 4, name: "SPEAKERS", path: "#" },
-    { id: 5, name: "CALL FOR PAPERS", path: "#" },
+    { id: 1, name: "Home", path: "/" },
+    { id: 2, name: "COMMITTEES", path: "/committees" },
+    { id: 3, name: "SUBMISSION", path: "/submission" },
+    { id: 4, name: "SPEAKERS", path: "/speakers" },
+    { id: 5, name: "CALL FOR PAPERS", path: "/CFP_ICATEEE2025_2.pdf" },
   ];
   return (
     <footer className="bg-primary w-full">
       <div className="grid grid-cols-2 gap-8 container mx-auto px-4 py-8">
         <div className="space-y-4">
-          <h3 className="text-xl font-bold ">Conference 2025</h3>
+          <h3 className="text-xl font-bold ">ICATEEE Conference 2025</h3>
           <p className="text-slate-400 max-w-xs">
             Join us for the premier conference on innovation and research in our
             field.
