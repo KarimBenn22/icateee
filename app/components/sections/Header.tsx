@@ -290,8 +290,8 @@ export default function ConferenceHeader() {
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row justify-center gap-4 mb-10">
-            <div className="relative group flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
+          <div className="flex flex-col md:flex-row justify-center gap-4 mb-10 items-center">
+            <div className="relative group w-[300px] py-4 md:px-4 md:py-2 md:w-fit flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
               <div className="h-[120px] w-10 bg-gradient-to-r from-white/10 via-white/50 to-white/10 absolute blur-sm -rotate-45 -left-16 group-hover:left-[150%] duration-500 delay-200" />
 
               <div className="text-left px-2">
@@ -302,7 +302,7 @@ export default function ConferenceHeader() {
                 </div>
               </div>
             </div>
-            <div className="relative group flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
+            <div className="relative group w-[300px] py-4 md:px-4 md:py-2 md:w-fit  flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
               <div className="h-[120px] w-10 bg-gradient-to-r from-white/10 via-white/50 to-white/10 absolute blur-sm -rotate-45 -left-16 group-hover:left-[150%] duration-500 delay-200" />
               <div className="text-left px-2">
                 <div className="text-sm md:text-base">
@@ -311,7 +311,7 @@ export default function ConferenceHeader() {
                 </div>
               </div>
             </div>
-            <div className="relative group flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
+            <div className="relative group w-[300px] py-4 md:px-4 md:py-2 md:w-fit  flex items-center gap-3 justify-center bg-gradient-to-br from-[#003875] to-[#013976] text-white p-2 rounded-full overflow-hidden border border-zinc-700 hover:ring-1 hover:ring-zinc-600 hover:shadow-xl duration-300">
               <div className="h-[120px] w-10 bg-gradient-to-r from-white/10 via-white/50 to-white/10 absolute blur-sm -rotate-45 -left-16 group-hover:left-[150%] duration-500 delay-200" />
 
               <div className="text-left px-2">
