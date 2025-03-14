@@ -26,22 +26,22 @@ export default function OriginizingCommitee() {
 
   return (
     <div className="w-full mx-auto my-8 px-[62px]">
-      <div className="bg-[#0a2d5e] text-white p-6 rounded-t-lg">
+      <div className="bg-primary text-white p-6 rounded-t-lg">
         <h2 className="text-2xl font-bold text-center mb-2">
-          Conference Participants
+          Conference Organizing Committee
         </h2>
         <p className="text-center text-gray-300 mb-0">
-          Total Participants: {sortedNames.length}
+          Total members: {sortedNames.length}
         </p>
       </div>
 
-      <div className="bg-[#f0f4f8] border border-[#d0d8e2] rounded-b-lg shadow-md p-6">
+      <div className="bg-[#f0f4f8] border rounded-b-lg shadow-md p-6 border-primary">
         {Object.keys(groupedNames)
           .sort()
           .map((letter) => (
             <div key={letter} className="mb-6">
               <div className="flex items-center mb-2">
-                <div className="bg-[#0a2d5e] text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-2">
+                <div className="bg-primary text-white font-bold rounded-full w-8 h-8 flex items-center justify-center mr-2">
                   {letter}
                 </div>
                 <div className="h-px bg-[#d0d8e2] flex-grow"></div>
@@ -51,9 +51,9 @@ export default function OriginizingCommitee() {
                 {groupedNames[letter].map((name, index) => (
                   <div
                     key={index}
-                    className="bg-white p-4 rounded-md shadow-sm border border-[#e0e7ef] hover:shadow-md transition-shadow"
+                    className="bg-white p-4 rounded-md shadow-sm border border-primary hover:shadow-md transition-shadow"
                   >
-                    <p className="text-[#0a2d5e] font-medium">{name}</p>
+                    <p className="text-primary font-medium">{name}</p>
                   </div>
                 ))}
               </div>
