@@ -4,7 +4,7 @@ function SponsorsSection() {
       <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">
         Conference Sponsors
       </h2>
-      <div className="flex items-center justify-evenly w-full">
+      <div className="flex flex-col gap-20 items-center justify-evenly w-full md:flex-row">
         <img
           src="/uni-logo-f.png"
           alt="University of Mohammed Boudiaf - M'sila"
