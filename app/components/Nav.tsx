@@ -17,7 +17,7 @@ export default function Navbar() {
     { href: "/commitees", label: "COMMITTEES" },
     { href: "/submission", label: "SUBMISSION" },
     { href: "/speakers", label: "SPEAKERS" },
-    { href: "/registration", label: "CALL FOR PAPERS" },
+    { href: "/CFP_ICATEEE2025_2.pdf", label: "CALL FOR PAPERS" },
     { href: "/discover", label: "DISCOVER" },
   ];
 
