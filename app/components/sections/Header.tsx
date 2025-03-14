@@ -1,8 +1,7 @@
-import {
-  Calendar,
-  MapPin
-} from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
 import styles from "./carousel.module.css";
+import Link from "next/link";
+import Image from "next/image";
 
 /**
  *
@@ -15,6 +14,18 @@ function HeaderBanner() {
   return (
     <>
       <div className="mb-8 text-white">
+        <div className="flex w-full justify-center mb-5">
+          <Link href="/" className="mx-4">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              className="rounded-full"
+              width={124}
+              height={124}
+              priority
+            />
+          </Link>
+        </div>
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-2 tracking-tight">
           The 2<sup>nd</sup> International Conference of
         </h1>
@@ -23,12 +34,16 @@ function HeaderBanner() {
           <br />
           Electrical Engineering (ICATEEE2025)
         </h1>
-        <div className="flex items-center justify-center space-x-2 md:text-xl font-semibold">
-          <Calendar className="h-5 w-5" />
-          <p>15th to 16th December 2025</p>
-          <span className="mx-2">•</span>
-          <MapPin className="h-5 w-5" />
-          <p>M&apos;sila, ALGERIA</p>
+        <div className="flex flex-col items-center justify-center space-x-2 md:text-xl font-semibold md:flex-row">
+          <div className="flex items-center gap-2">
+            <Calendar className="h-5 w-5" />
+            <p>15th to 16th December 2025</p>
+          </div>
+          <span className="mx-2"></span>
+          <div className="flex items-center gap-2">
+            <MapPin className="h-5 w-5" />
+            <p>M&apos;sila, ALGERIA</p>
+          </div>
         </div>
       </div>
     </>
