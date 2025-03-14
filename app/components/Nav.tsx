@@ -9,19 +9,19 @@ export default function Navbar() {
       <div className="flex items-center justify-center relative">
         <ul className="flex gap-4 ml-15">
           <li className="p-2 relative group">
-            <Link href={""} className="relative inline-block">
+            <Link href={"/"} className="relative inline-block">
               HOME
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-2 relative group">
-            <Link href={""} className="relative inline-block">
+            <Link href={"/commitees"} className="relative inline-block">
               COMMITEES
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-2 relative group">
-            <Link href={""} className="relative inline-block">
+            <Link href={"/submission"} className="relative inline-block">
               SUBMISSION
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
@@ -38,19 +38,19 @@ export default function Navbar() {
 
         <ul className="flex gap-4">
           <li className="p-2 relative group">
-            <Link href={""} className="relative inline-block">
+            <Link href={"/speakers"} className="relative inline-block">
               SPEAKERS
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-2 relative group">
-            <Link href={""} className="relative inline-block">
+            <Link href={"/registration"} className="relative inline-block">
               CALL FOR PAPERS
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </li>
           <li className="p-2 relative group">
-            <Link href={""} className="relative inline-block">
+            <Link href={"/discover"} className="relative inline-block">
               DISCOVER
               <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
             </Link>
