@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="w-full bg-primary p-4 fixed top-0 z-200">
+      <nav className="w-full bg-primary p-4 sticky top-0 z-999">
         <div className="flex items-center justify-center relative">
           <div
             className={`absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ${
