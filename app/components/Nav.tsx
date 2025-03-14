@@ -13,7 +13,7 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { href: "/playground", label: "HOME" },
+    { href: "/", label: "HOME" },
     { href: "/commitees", label: "COMMITTEES" },
     { href: "/submission", label: "SUBMISSION" },
     { href: "/speakers", label: "SPEAKERS" },
