@@ -3,9 +3,9 @@ import Nav from "@/app/components/Nav";
 import HeaderSection from "@/app/components/sections/Header";
 import RegistrationSection from "../components/sections/Registration";
 import ImportantDatesSection from "../components/sections/ImportantDates";
+import ConferenceParticipants from "../components/sections/ConferenceParticipants";
 import Topics from "../components/sections/topics";
 import { SponsorsSection } from "../components/sections/sponsors";
-
 
 export default function Playground() {
   return (
@@ -16,7 +16,7 @@ export default function Playground() {
         <Topics />
         <ImportantDatesSection />
         <RegistrationSection />
-        <SponsorsSection/>
+        <SponsorsSection />
       </div>
       <Footer />
     </main>
