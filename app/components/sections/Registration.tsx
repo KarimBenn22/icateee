@@ -33,27 +33,27 @@ export default function RegistrationSection() {
         </div>
 
         {/* Fees Table - Desktop */}
-        <div className="hidden md:block bg-gradient-to-t from-primary/40 via-primary/10 to-primary/20 shadow-md rounded-lg overflow-hidden border border-primary/20">
+        <div className="hidden md:block bg-primary shadow-md rounded-lg overflow-hidden border border-primary/20">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead>
                 <tr className="bg-primary/10">
-                  <th className="px-6 py-4 text-left text-xs font-medium text-primary uppercase tracking-wider">
+                  <th className="px-6 py-4 text-left text-xs font-medium text-foreground uppercase tracking-wider">
                     Category
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-medium text-primary uppercase tracking-wider">
+                  <th className="px-6 py-4 text-left text-xs font-medium text-foreground uppercase tracking-wider">
                     IEEE Member
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-medium text-primary uppercase tracking-wider">
+                  <th className="px-6 py-4 text-left text-xs font-medium text-foreground uppercase tracking-wider">
                     IEEE Student Member
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-medium text-primary uppercase tracking-wider">
+                  <th className="px-6 py-4 text-left text-xs font-medium text-foreground uppercase tracking-wider">
                     Non-Member
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-medium text-primary uppercase tracking-wider">
+                  <th className="px-6 py-4 text-left text-xs font-medium text-foreground uppercase tracking-wider">
                     Student Non-Member
                   </th>
-                  <th className="px-6 py-4 text-left text-xs font-medium text-primary uppercase tracking-wider">
+                  <th className="px-6 py-4 text-left text-xs font-medium text-foreground uppercase tracking-wider">
                     Virtual Participation
                   </th>
                 </tr>
