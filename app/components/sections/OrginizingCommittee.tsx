@@ -25,7 +25,7 @@ export default function OriginizingCommitee() {
   });
 
   return (
-    <div className="w-full max-w-6xl mx-auto my-8 px-4">
+    <div className="w-full mx-auto my-8 px-[62px]">
       <div className="bg-[#0a2d5e] text-white p-6 rounded-t-lg">
         <h2 className="text-2xl font-bold text-center mb-2">
           Conference Participants
