@@ -18,13 +18,22 @@ export default function Navbar() {
     { href: "/submission", label: "SUBMISSION" },
     { href: "/speakers", label: "SPEAKERS" },
     { href: "/CFP_ICATEEE2025_2.pdf", label: "CALL FOR PAPERS" },
-    { href: "/discover", label: "DISCOVER" },
   ];
 
   return (
     <nav className="w-full bg-primary p-4 sticky top-0 z-999">
       <div className="container mx-auto">
         <div className="hidden md:flex items-center justify-center relative">
+          <Link href="/" className="mx-4">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              className="rounded-full"
+              width={48}
+              height={48}
+              priority
+            />
+          </Link>
           <div className="flex items-center gap-4">
             {navLinks.slice(0, 3).map((link) => (
               <div key={link.href} className="p-2 relative group">
@@ -38,17 +47,6 @@ export default function Navbar() {
               </div>
             ))}
           </div>
-
-          <Link href="/" className="mx-4">
-            <Image
-              src="/favicon.ico"
-              alt="Logo"
-              className="rounded-full"
-              width={48}
-              height={48}
-              priority
-            />
-          </Link>
 
           <div className="flex items-center gap-4">
             {navLinks.slice(3).map((link) => (
