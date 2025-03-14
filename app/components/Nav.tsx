@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const navLinks = [
     { href: "/", label: "HOME" },
-    { href: "/commitees", label: "COMMITTEES" },
+    { href: "/committees", label: "COMMITTEES" },
     { href: "/submission", label: "SUBMISSION" },
     { href: "/speakers", label: "SPEAKERS" },
     { href: "/CFP_ICATEEE2025_2.pdf", label: "CALL FOR PAPERS" },
