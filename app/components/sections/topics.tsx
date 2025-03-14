@@ -36,7 +36,7 @@ export default function Topics() {
   ];
 
   return (
-    <div className="flex gap-4 w-full flex-col justify-center">
+    <div className="flex gap-4 w-full flex-col justify-center text-center">
       <div className="flex items-center justify-center mb-3">
         <div className="h-px w-12 bg-primary"></div>
         <h2 className="text-lg md:text-xl font-semibold mx-3 text-black">
@@ -45,7 +45,7 @@ export default function Topics() {
         </h2>
         <div className="h-px w-12 bg-primary/70"></div>
       </div>
-      <p className="text-sm md:text-base mb-4 max-w-3xl mx-auto text-primary">
+      <p className="text-sm md:text-base mb-4 max-w-3xl text-primary">
         is to bring together all potential participants: from industry, experts,
         researchers, academics, manufacturers and suppliers of several countries
         to review the latest developments that achieved in these areas, and to
