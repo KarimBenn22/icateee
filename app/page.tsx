@@ -8,7 +8,6 @@ import { SponsorsSection } from "./components/sections/sponsors";
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-      <Nav />
       <HeaderSection />
       <div className="max-w-6xl">
         <Topics />
@@ -16,7 +15,6 @@ export default function Home() {
         <RegistrationSection />
         <SponsorsSection />
       </div>
-      <Footer />
     </main>
   );
 }
