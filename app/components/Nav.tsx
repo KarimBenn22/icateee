@@ -66,7 +66,7 @@ export default function Navbar() {
         <div className="flex md:hidden items-center justify-between">
           <Link href="/">
             <Image
-              src="/favicon.ico"
+              src="/logo.png"
               alt="Logo"
               className="rounded-full"
               width={40}
