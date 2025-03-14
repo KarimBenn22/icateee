@@ -51,17 +51,17 @@ export default function ImportantDatesSection() {
             {dates.map((item, index) => (
               <div
                 key={index}
-                className="group relative flex flex-col overflow-hidden rounded-lg border border-primary/20 bg-gradient-to-t from-primary/40 via-primary/10 to-primary/20 shadow-sm transition-all hover:shadow-md"
+                className="group relative flex flex-col overflow-hidden rounded-lg border border-primary/20 bg-primary shadow-sm transition-all hover:shadow-md"
               >
                 <div className="flex items-center justify-center bg-primary/10 p-4 text-center">
                   <div className="flex flex-col items-center">
-                    <span className="text-sm font-medium text-primary/70">
+                    <span className="text-sm font-medium text-[#fff]/70">
                       {item.month}
                     </span>
-                    <span className="text-4xl font-bold text-primary">
+                    <span className="text-4xl font-bold text-[#fff] ">
                       {item.day}
                     </span>
-                    <span className="text-sm text-primary/70">2025</span>
+                    <span className="text-sm text-[#fff]/70">2025</span>
                   </div>
                 </div>
 
