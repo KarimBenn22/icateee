@@ -67,28 +67,24 @@ function CarouselPlayground() {
       <div className="w-full h-full absolute z-101 flex items-center justify-center">
         <HeaderBanner></HeaderBanner>
       </div>
-      <img
-        src="https://www.univ-msila.dz/site/wp-content/uploads/2023/09/umbm.jpg"
-        alt=""
+      <Image
+        src="/umbm.jpg"
+        alt="univ msila"
+        fill={true}
         aria-hidden
-        className=""
         style={
           {
-            "--height": "100%",
-            "--width": "100%",
             "--index": 0,
           } as React.CSSProperties
         }
       />
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/2/2b/La_facult%C3%A9_de_technologie_%28Univ-Msila%29.JPG"
-        alt=""
+      <Image
+        src="/La_facult%C3%A9_de_technologie_%28Univ-Msila%29.JPG"
+        alt="univ msila 2"
+        fill={true}
         aria-hidden
-        className=""
         style={
           {
-            "--height": "100%",
-            "--width": "100%",
             "--index": 1,
           } as React.CSSProperties
         }
