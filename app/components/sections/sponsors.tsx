@@ -23,22 +23,22 @@ function SponsorsSection() {
             Financial Sponsor
           </p>
           <Image
-          src="/uni-logo-f.png"
-          alt="University of Mohammed Boudiaf - M'sila"
-          width={200}
-          height={200}
-        />
+            src="/uni-logo-f.png"
+            alt="University of Mohammed Boudiaf - M'sila"
+            width={200}
+            height={200}
+          />
         </div>
         <div className="space-y-4">
           <p className="text-primary font-black text-center md:hidden">
             Technical Sponsor
           </p>
           <Image
-          src="/ieee-f.png"
-          alt="IEEE - Algeria's Section"
-          width={400}
-          height={200}
-        />
+            src="/ieee-f.png"
+            alt="IEEE - Algeria's Section"
+            width={400}
+            height={200}
+          />
         </div>
       </div>
     </div>
