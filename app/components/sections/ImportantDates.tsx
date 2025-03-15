@@ -36,7 +36,7 @@ export default function ImportantDatesSection() {
 
   return (
     <section className="w-full py-12 md:py-16 lg:py-20 flex items-center justify-center">
-      <div className="container px-24 md:px-4">
+      <div className="container px-10 md:px-4">
         <div className="mx-auto max-w-3xl text-center mb-10">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-primary">
             Important Dates
