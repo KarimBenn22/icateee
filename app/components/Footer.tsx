@@ -13,9 +13,11 @@ export default function Footer() {
       <div className="grid grid-cols-2 gap-8 container mx-auto px-4 py-8">
         <div className="space-y-4">
           <h3 className="text-xl font-bold ">ICATEEE Conference 2025</h3>
+          <p id="contact">icateee2025@univ-msila.dz</p>
           <p className="text-slate-400 max-w-xs">
-            Join us for the premier conference on innovation and research in our
-            field.
+            Join us for the third edition of the ICATEEE Conference 25 to learn
+            more about innovation and research in the Advanced Technology in
+            Electronic and Electrical Engineering field.
           </p>
         </div>
         <div className="space-y-4">
@@ -34,7 +36,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-foreground mt-12 p-8 text-center text-foreground w-full">
         <p className="text-center">
-          © {new Date().getFullYear()} Conference. All rights reserved.
+          © {new Date().getFullYear()} ICATEE25 Conference. All rights reserved.
         </p>
       </div>
     </footer>

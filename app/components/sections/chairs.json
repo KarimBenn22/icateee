@@ -74,29 +74,6 @@
       ]
     },
     {
-      "title": "Finance Chairs",
-      "members": [
-        {
-          "role": "Finance Chair",
-          "name": "Fateh KRIM",
-          "title": "Pr.",
-          "affiliation": "University of M'sila, Algeria"
-        },
-        {
-          "role": "Finance Chair",
-          "name": "Mouloud CHALLAL",
-          "title": "Pr.",
-          "affiliation": "University of M'sila, Algeria"
-        },
-        {
-          "role": "Finance Chair",
-          "name": "Said DRID",
-          "title": "Pr.",
-          "affiliation": "University of M'sila, Algeria"
-        }
-      ]
-    },
-    {
       "title": "Publication Chairs",
       "members": [
         {
@@ -114,6 +91,18 @@
         {
           "role": "Publication Chair",
           "name": "Assam BOUDIA",
+          "title": "Dr.",
+          "affiliation": "University of M'sila, Algeria"
+        },
+        {
+          "role": "Publication Chair",
+          "name": "Abdelhamid IRATNI",
+          "title": "Pr.",
+          "affiliation": "University of Bordj Bou Arreridj, Algeria"
+        },
+        {
+          "role": "Publication Chair",
+          "name": "Khaled BELHOUCHET",
           "title": "Dr.",
           "affiliation": "University of M'sila, Algeria"
         }
