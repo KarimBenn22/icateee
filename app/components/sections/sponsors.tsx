@@ -17,8 +17,8 @@ function SponsorsSection() {
         <p className="text-primary font-black">Financial Sponsor</p>
         <p className="text-primary font-black">Technical Sponsor</p>
       </div>
-      <div className="flex flex-col gap-16 md:gap-1 py-8 items-center justify-evenly w-full md:flex-row rounded-lg border-2 border-primary/20 shadow-md hover:shadow-lg transition-shadow">
-        <div className="space-y-4">
+      <div className="flex flex-co gap-16 md:gap-1 py-8 items-center justify-evenly w-full md:flex-row rounded-lg border-2 border-primary/20 shadow-md hover:shadow-lg transition-shadow">
+        <div className="flex gap-4 items-center justify-center flex-col">
           <p className="text-primary font-black text-center md:hidden">
             Financial Sponsor
           </p>
@@ -28,6 +28,8 @@ function SponsorsSection() {
             width={200}
             height={200}
           />
+
+          <Image src="/lge.png" alt="LGE" width={300} height={150} />
         </div>
         <div className="space-y-4">
           <p className="text-primary font-black text-center md:hidden">
@@ -37,7 +39,7 @@ function SponsorsSection() {
             src="/ieee-f.png"
             alt="IEEE - Algeria's Section"
             width={400}
-            height={200}
+            height={150}
           />
         </div>
       </div>
