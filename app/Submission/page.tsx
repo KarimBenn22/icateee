@@ -99,7 +99,7 @@ export default function IcateeePage() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   <a
-                    href="#"
+                    href="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/conference-template-a4.docx"
                     download
                     className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-foreground rounded-md hover:bg-primary/90 transition-colors shadow-sm"
                   >
@@ -108,7 +108,7 @@ export default function IcateeePage() {
                   </a>
 
                   <a
-                    href="#"
+                    href="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/pubs/conference-latex-template_10-17-19.zip"
                     download
                     className="flex items-center justify-center gap-2 px-4 py-3 bg-primary text-foreground rounded-md hover:bg-primary/90 transition-colors shadow-sm"
                   >
