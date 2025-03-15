@@ -18,7 +18,7 @@ export default function CommitteeSection() {
     <section className="w-full py-8 md:py-12 text-black">
       <div className="container mx-auto max-w-[1200px] px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-6 md:mb-8">
-          Committee Members
+          Scientific Committee
           <div className="w-24 h-1 mx-auto mt-4 rounded-full bg-primary"></div>
         </h2>
         <div className="mb-6 relative">
