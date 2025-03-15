@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function SponsorsSection() {
   return (
     <div className="w-full px-[62px] pb-10">
@@ -12,11 +14,18 @@ function SponsorsSection() {
         </p>
       </div>
       <div className="flex flex-col gap-16 md:gap-1 py-8 items-center justify-evenly w-full md:flex-row rounded-lg border-2 border-primary/20 shadow-md hover:shadow-lg transition-shadow">
-        <img
+        <Image
           src="/uni-logo-f.png"
           alt="University of Mohammed Boudiaf - M'sila"
+          width={200}
+          height={200}
         />
-        <img src="/ieee-f.png" alt="IEEE - Algeria's Section" />
+        <Image
+          src="/ieee-f.png"
+          alt="IEEE - Algeria's Section"
+          width={400}
+          height={200}
+        />
       </div>
     </div>
   );
