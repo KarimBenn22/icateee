@@ -74,7 +74,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className=""
                 >
-                  <span>University of M'sila, M'sila, Algeria</span>
+                  <span>University of M&apos;sila, M&apos;sila, Algeria</span>
                 </a>
               </div>
 
