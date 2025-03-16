@@ -102,7 +102,7 @@ export default function Topics() {
             <div className="text-sm md:text-base">
               {" "}
               <Calendar className="h-5 w-5 inline mr-2" />
-              15-16 December 2025
+              10-11 December 2025
             </div>
           </div>
         </div>
