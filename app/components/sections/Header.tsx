@@ -37,7 +37,7 @@ function HeaderBanner() {
         <div className="flex flex-col items-center justify-center space-x-2 md:text-xl font-semibold md:flex-row">
           <div className="flex items-center gap-2">
             <Calendar className="h-5 w-5" />
-            <p>15th to 16th December 2025</p>
+            <p>10th to 11th December 2025</p>
           </div>
           <span className="mx-2"></span>
           <div className="flex items-center gap-2">
@@ -112,7 +112,7 @@ export default function ConferenceHeader() {
               International Conference of Advanced Technology in Electronic and
               Electrical Engineering (ICATEEE2025)
             </span>{" "}
-            will be held from 15th to 16th December 2025 at M&apos;sila,
+            will be held from 10th to 11th December 2025 at M&apos;sila,
             Algeria.
           </p>
         </div>
