@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
@@ -18,7 +17,7 @@ export default function Navbar() {
     { href: "/submission", label: "SUBMISSION" },
     { href: "/speakers", label: "SPEAKERS" },
     { href: "/CFP_ICATEEE2025.pdf", label: "CALL FOR PAPERS" },
-    { href: "#contact", label: "CONTACT"}
+    { href: "#contact", label: "CONTACT" },
   ];
 
   return (
@@ -26,13 +25,12 @@ export default function Navbar() {
       <div className="container mx-auto">
         <div className="hidden md:flex items-center justify-center relative">
           <Link href="/" className="mx-4">
-            <Image
+            <img
               src="/logo.png"
               alt="Logo"
               className="rounded-full"
               width={48}
               height={48}
-              priority
             />
           </Link>
           <div className="flex items-center gap-4">
@@ -66,13 +64,12 @@ export default function Navbar() {
 
         <div className="flex md:hidden items-center justify-between">
           <Link href="/">
-            <Image
+            <img
               src="/logo.png"
               alt="Logo"
               className="rounded-full"
               width={40}
               height={40}
-              priority
             />
           </Link>
 
