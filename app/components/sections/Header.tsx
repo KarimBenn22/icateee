@@ -1,7 +1,6 @@
 import { Calendar, MapPin } from "lucide-react";
 import styles from "./carousel.module.css";
 import Link from "next/link";
-import Image from "next/image";
 
 /**
  *
@@ -16,13 +15,12 @@ function HeaderBanner() {
       <div className="mb-8 text-white">
         <div className="flex w-full justify-center mb-5">
           <Link href="/" className="mx-4">
-            <Image
+            <img
               src="/logo.png"
               alt="Logo"
               className="rounded-full"
               width={124}
               height={124}
-              priority
             />
           </Link>
         </div>
@@ -67,10 +65,9 @@ function CarouselPlayground() {
       <div className="w-full h-full absolute z-101 flex items-center justify-center">
         <HeaderBanner></HeaderBanner>
       </div>
-      <Image
+      <img
         src="/umbm.jpg"
         alt="univ msila"
-        fill={true}
         aria-hidden
         style={
           {
@@ -78,10 +75,9 @@ function CarouselPlayground() {
           } as React.CSSProperties
         }
       />
-      <Image
+      <img
         src="/La_facult%C3%A9_de_technologie_%28Univ-Msila%29.JPG"
         alt="univ msila 2"
-        fill={true}
         aria-hidden
         style={
           {

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 function SponsorsSection() {
   return (
     <div className="w-full px-[20px] pb-10 md:px-[62px]">
@@ -22,20 +20,20 @@ function SponsorsSection() {
           <p className="text-primary font-black text-center md:hidden">
             Financial Sponsor
           </p>
-          <Image
+          <img
             src="/uni-logo-f.png"
             alt="University of Mohammed Boudiaf - M'sila"
             width={200}
             height={200}
           />
 
-          <Image src="/lge.png" alt="LGE" width={300} height={150} />
+          <img src="/lge.png" alt="LGE" width={300} height={150} />
         </div>
         <div className="space-y-4">
           <p className="text-primary font-black text-center md:hidden">
             Technical Sponsor
           </p>
-          <Image
+          <img
             src="/ieee-f.png"
             alt="IEEE - Algeria's Section"
             width={400}
