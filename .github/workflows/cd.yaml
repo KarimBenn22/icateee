@@ -21,27 +21,24 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create Release Pull Request or Publish
-        id: changesets
-        uses: changesets/action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Setup Node.js
-        if: ${{ steps.changesets.outputs.hasChangesets == 'true' }}
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Setup pnpm
-        if: ${{ steps.changesets.outputs.hasChangesets == 'true' }}
         uses: pnpm/action-setup@v3
         with:
           version: latest
 
       - name: Install dependencies
-        if: ${{ steps.changesets.outputs.hasChangesets == 'true' }}
         run: pnpm install
+
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build project
         if: ${{ steps.changesets.outputs.hasChangesets == 'true' }}
