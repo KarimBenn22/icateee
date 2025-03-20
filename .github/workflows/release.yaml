@@ -25,16 +25,25 @@ jobs:
       - name: Zip
         run: zip -r icateee.zip out
 
+      - name: Create Tag
+        run: |
+          TAG_NAME="v$(date +'%Y%m%d%H%M%S')"  # Example: v20250320153000
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git tag $TAG_NAME
+          git push origin $TAG_NAME
+          echo "TAG_NAME=$TAG_NAME" >> $GITHUB_ENV
+
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          tag_name: ${{ env.TAG_NAME }}
+          release_name: Release ${{ env.TAG_NAME }}
           body: |
-            Release ${{ github.ref }}
+            Release ${{ env.TAG_NAME }}
           draft: false
           prerelease: false
 
