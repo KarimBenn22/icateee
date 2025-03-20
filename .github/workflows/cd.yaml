@@ -3,7 +3,14 @@ name: CD
 on:
   workflow_run:
     workflows: ["CI"]
-    types: [completed]
+    types:
+      - completed
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   deploy:
@@ -11,22 +18,47 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: build-output
-          path: out/
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Zip output directory
-        run: zip -r out.zip ./out
-
-      - name: Create GitHub Release
-        id: create_release
-        uses: softprops/action-gh-release@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag_name: v${{ github.run_number }}
-          name: "Release ${{ github.run_number }}"
-          body: |
-            Release from CI build #${{ github.run_number }}.
-          files: out.zip
+          node-version: 20
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: latest
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          version: pnpm changeset version
+          commit: "chore: release"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build project
+        if: steps.changesets.outputs.published == 'true'
+        run: pnpm build
+
+      - name: zip 'out' directory
+        if: steps.changesets.outputs.published == 'true'
+        run: zip -r out.zip out
+
+      - name: Publish Release
+        if: steps.changesets.outputs.published == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG_NAME=$(gh release list --json tagName --jq '.[0].tagName')
+          if [ -z "$TAG_NAME" ]; then
+            TAG_NAME=$(git describe --tags --abbrev=0 || echo "v1.0.0")
+            gh release create "$TAG_NAME" --title "Release $TAG_NAME" --notes "New release $TAG_NAME"
+          fi
+          gh release upload "$TAG_NAME" dist/file.zip
